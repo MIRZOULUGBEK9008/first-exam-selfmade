@@ -105,6 +105,10 @@ img {
   margin-right: auto;
 }
 
+.site-logo-link:active {
+  outline: none;
+}
+
 .site-nav {
   padding-left: 100px;
 }
@@ -121,15 +125,30 @@ img {
 }
 
 .header-links {
+  display: inline-block;
+  position: relative;
   padding-bottom: 6px;
   white-space: nowrap;
   text-decoration: none;
   color: var(--text-color);
 }
 
-.header-links:active {
-  border-bottom: 2px solid var(--text-color);
-  outline: none;
+.header-links:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header-links:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .inner-wrapper-tipa-main {
