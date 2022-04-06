@@ -41,11 +41,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  background-color: var(--text-color);
+  color: var(--special-text-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+  line-height: 25px;
   padding: 0;
   margin: 0;
 }
@@ -53,6 +53,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+*:focus {
+  outline: 2px dashed var(--text-color);
+  outline-offset: 3px ;
 }
 
 
@@ -73,6 +78,76 @@ img {
 }
 
 
+/* SITE-HEADER  */
+.first-wrapper {
+  padding-top: 64px;
+  padding-bottom: 146px;
+  background-image: url(../img/main-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-header {
+  padding-bottom: 130px;
+}
+
+.inner-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo-link {
+  display: flex;
+  flex-shrink: 0;
+  margin-right: auto;
+}
+
+.site-logo {
+}
+.site-nav {
+  padding-left: 100px;
+}
+
+.header-link-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-lisnk-list-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header-links {
+  padding-bottom: 6px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header-links:active {
+  border-bottom: 2px solid var(--text-color);
+  outline: none;
+}
+
+.inner-wrapper-tipa-main {
+  width: 650px;
+}
+
+.site-main-heading {
+  margin: 0;
+  padding: 38px;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  font-size: 72px;
+  line-height: 70px;
+  font-weight: 300;
+}
+
 
 /* RETINA-BG  */
 @media
@@ -82,5 +157,9 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
+
+  .first-wrapper {
+    background-image: url(../img/main-bg@2x.jpg);
+  }
 
 }
