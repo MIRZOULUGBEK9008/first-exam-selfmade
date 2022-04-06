@@ -63,7 +63,7 @@ img {
 
 /* CONTAINER  */
 .container {
-  max-width: 1210px;
+  max-width: 1214px;
   width: 100%;
   padding-left: 50px;
   padding-right: 50px;
@@ -80,9 +80,10 @@ img {
 
 /* SITE-HEADER  */
 .first-wrapper {
-  margin-bottom: 160px;
   padding-top: 64px;
   padding-bottom: 146px;
+  padding-left: 2px;
+  padding-right: 2px;
   background-image: url(../img/main-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -127,14 +128,19 @@ img {
 .header-links {
   display: inline-block;
   position: relative;
+  padding-top: 5px;
   padding-bottom: 6px;
   white-space: nowrap;
   text-decoration: none;
   color: var(--text-color);
 }
 
+.header-links:active {
+  outline: none;
+}
+
 .header-links:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -146,7 +152,7 @@ img {
   transition: transform 0.25s ease-out;
 }
 
-.header-links:hover:after {
+.header-links:active:after {
   transform: scaleX(1);
   transform-origin: bottom center;
 }
@@ -170,12 +176,18 @@ img {
 
 /* MAIN-CONTENT  */
 /* HERO-ONE  */
+.hero-one-main-wrapper {
+  padding-top: 160px;
+  padding-bottom: 184px;
+  padding-left: 2px;
+  padding-right: 1px;
+}
+
 .hero-one {
   background-image: url(../img/hero-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left;
-  margin-bottom: 184px;
 }
 
 .hero-one-bg-box-wrapper {
@@ -191,7 +203,6 @@ img {
 }
 
 .hero-one-info {
-
   width: 445px;
 }
 
@@ -211,6 +222,110 @@ img {
   color: var(--text-color);
 }
 
+/* HERO-TWO  */
+.hero-two-main-wrapper {
+  padding-bottom: 184px;
+}
+
+.hero-two-heading-and-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 80px;
+}
+
+.hero-two-main-heading {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.button-link {
+  display: block;
+  margin-left: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 37px;
+  padding-right: 43px;
+  border: 1px solid var(--special-text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--special-text-color);
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 5px;
+  flex-shrink: 0;
+  transition: all 0.4s ease;
+}
+
+.button-link:active {
+  background-color: var(--special-text-color);
+  color: var(--text-color);
+}
+
+.hero-two-img-cards-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.img-card-wrapper {
+  background-image: url(../img/hero-img/deep-earth.jpg);
+}
+
+.img-card-wrapper:nth-child(2) {
+  background-image: url(../img/hero-img/night-arcade.jpg);
+}
+
+.img-card-wrapper:nth-child(3) {
+  background-image: url(../img/hero-img/soccer-team-vr.jpg);
+}
+
+
+.img-card-wrapper:nth-child(4) {
+  background-image: url(../img/hero-img/the-grid.jpg);
+}
+
+.img-card-wrapper:nth-child(5) {
+  background-image: url(../img/hero-img/from-up-above-vr.jpg);
+}
+
+.img-card-wrapper:nth-child(6) {
+  background-image: url(../img/hero-img/pocket-boreals.jpg);
+}
+
+.img-card-wrapper:nth-child(7) {
+  background-image: url(../img/hero-img/the-curiosity.jpg);
+}
+
+.img-card-wrapper:nth-child(8) {
+  background-image: url(../img/hero-img/make-it-fisheye.jpg);
+}
+
+
+
+.img-card {
+  display: flex;
+  align-items: flex-end;
+  width: 256px;
+  height: 450px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 32px;
+}
+
+.img-card-heading {
+  margin: 0;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
 /* RETINA-BG  */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -222,6 +337,43 @@ only screen and (                min-resolution: 2dppx) {
 
   .first-wrapper {
     background-image: url(../img/main-bg@2x.jpg);
+  }
+
+  .hero-one {
+    background-image: url(../img/hero-bg-img@2x.jpg);
+  }
+
+  .img-card-wrapper {
+    background-image: url(../img/hero-img/deep-earth@2x.jpg);
+  }
+
+  .img-card-wrapper:nth-child(2) {
+    background-image: url(../img/hero-img/night-arcade@2x.jpg);
+  }
+
+  .img-card-wrapper:nth-child(3) {
+    background-image: url(../img/hero-img/soccer-team-vr@2x.jpg);
+  }
+
+
+  .img-card-wrapper:nth-child(4) {
+    background-image: url(../img/hero-img/the-grid@2x.jpg);
+  }
+
+  .img-card-wrapper:nth-child(5) {
+    background-image: url(../img/hero-img/from-up-above-vr@2x.jpg);
+  }
+
+  .img-card-wrapper:nth-child(6) {
+    background-image: url(../img/hero-img/pocket-boreals@2x.jpg);
+  }
+
+  .img-card-wrapper:nth-child(7) {
+    background-image: url(../img/hero-img/the-curiosity@2x.jpg);
+  }
+
+  .img-card-wrapper:nth-child(8) {
+    background-image: url(../img/hero-img/make-it-fisheye@2x.jpg);
   }
 
 }
