@@ -166,7 +166,7 @@ img {
   transition: transform 0.25s ease-out;
 }
 
-.header-links:active:after {
+.header-links:hover:after {
   transform: scaleX(1);
   transform-origin: bottom center;
 }
