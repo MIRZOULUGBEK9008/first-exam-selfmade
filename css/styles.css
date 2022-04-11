@@ -107,6 +107,14 @@ img {
   margin-right: auto;
 }
 
+.site-logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-logo-link:active {
+  opacity: 0.6;
+}
+
 .site-logo-link:active {
   outline: none;
 }
