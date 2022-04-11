@@ -402,7 +402,7 @@ img {
   transition: transform 0.25s ease-out;
 }
 
-.social-logo-link:active:after {
+.social-logo-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom center;
 }
