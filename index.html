@@ -14,30 +14,38 @@
 <body>
 
   <!-- SITE-HEADER AND HERO-HEADER  -->
-  <div class="first-wrapper">
-    <div class="container">
-      <header class="site-header">
-        <div class="inner-wrapper">
+  <div class="site-header-hero-wrapper">
+    <header class="site-header">
+      <div class="container site-header__container">
+        <!-- SITE-LOGO  -->
+        <a class="logo site-header__logo" href="index.html" tabindex="-1">
+          <img class="logo__img" src="img/loopstudios.svg" width="192" height="32" alt="site-logo">
+        </a>
 
-          <!-- SITE-LOGO  -->
-          <a class="site-logo-link" href="index.html" tabindex="-1"><img class="site-logo" src="img/loopstudios.svg" width="192" height="32" alt="site-logo"></a>
-
-          <!-- SITE-NAV  -->
-          <nav class="site-nav">
-            <ul class="header-link-list">
-              <li class="site-lisnk-list-item"><a class="header-links" href="#">About</a></li>
-              <li class="site-lisnk-list-item"><a class="header-links" href="#">Careers</a></li>
-              <li class="site-lisnk-list-item"><a class="header-links" href="#">Events</a></li>
-              <li class="site-lisnk-list-item"><a class="header-links" href="#">Products</a></li>
-              <li class="site-lisnk-list-item"><a class="header-links" href="#">Support</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <div class="inner-wrapper-tipa-main">
-        <h1 class="site-main-heading">Immersive<br>experiences<br>that deliver</h1>
+        <!-- SITE-NAV  -->
+        <nav class="sitenav site-header__sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">About</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Careers</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Events</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Products</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Support</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
+
+    <h1 class="title">Immersive experiences that deliver</h1>
 
   </div>
 
@@ -46,86 +54,74 @@
   <main class="main-content">
 
     <!-- HERO-ONE  -->
-    <section class="hero-one-main-wrapper">
-      <div class="container">
-        <div class="hero-one">
-          <div class="hero-one-bg-box-wrapper">
-            <div class="hero-one-bg-box">
-              <div class="hero-one-info">
-                <h2 class="hero-one-main-heading">The leader in interactive VR</h2>
-                <p class="hero-one-main-paragraph">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
-              </div>
-            </div>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h2 class="hero__title">The leader in interactive VR</h2>
+            <p class="hero__description">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- HERO-TWO  -->
-    <section class="hero-two-main-wrapper">
-      <div class="container">
-        <div class="hero-two-heading-and-link-wrapper">
-          <h2 class="hero-one-main-heading hero-two-main-heading">our creations</h2>
-          <a class="button-link" href="#">see all</a>
+    <section class="projects">
+      <div class="container projects__container">
+        <div class="projects__title-button-wrapper">
+          <h2 class="projects__title">Our creations</h2>
+          <a class="button projects__button" href="#">See all</a>
         </div>
 
         <!-- HERO-TWO-IMG-CARDS  -->
-        <ul class="hero-two-img-cards-list">
+        <ul class="project">
 
           <!-- DEEP EARTH  -->
-          <li class="img-card-wrapper">
-            <div class="img-card">
-              <h3 class="img-card-heading">deep earth</h3>
-            </div>
+          <li class="project__item">
+
+            <h3 class="project__title">Deep earth</h3>
           </li>
 
           <!-- NIGHT ARCADE  -->
-          <li class="img-card-wrapper">
-            <div class="img-card">
-              <h3 class="img-card-heading">night arcade</h3>
-            </div>
+          <li class="project__item">
+
+            <h3 class="project__title">Night arcade</h3>
           </li>
 
           <!-- SOCCER TEAM VR -->
-          <li class="img-card-wrapper">
-            <div class="img-card">
-              <h3 class="img-card-heading">soccer team vr</h3>
-            </div>
+          <li class="project__item">
+
+            <h3 class="project__title">Soccer team vr</h3>
           </li>
 
           <!-- THE GRID  -->
-          <li class="img-card-wrapper">
-            <div class="img-card">
-              <h3 class="img-card-heading">the<br>grid</h3>
-            </div>
+          <li class="project__item">
+
+            <h3 class="project__title">The<br>grid</h3>
           </li>
 
           <!-- FROM UP ABOVE VR  -->
-          <li class="img-card-wrapper">
-            <div class="img-card">
-              <h3 class="img-card-heading">from up above vr</h3>
-            </div>
+          <li class="project__item">
+
+            <h3 class="project__title">From up above vr</h3>
           </li>
 
           <!-- POCKET BOREALIS  -->
-          <li class="img-card-wrapper">
-            <div class="img-card">
-              <h3 class="img-card-heading">pocket borealis</h3>
-            </div>
+          <li class="project__item">
+
+            <h3 class="project__title">Pocket borealis</h3>
           </li>
 
           <!-- THE CURIOSITY  -->
-          <li class="img-card-wrapper">
-            <div class="img-card">
-              <h3 class="img-card-heading">the curiosity</h3>
-            </div>
+          <li class="project__item">
+
+            <h3 class="project__title">The curiosity</h3>
           </li>
 
           <!-- MAKE IT FISHEYE  -->
-          <li class="img-card-wrapper">
-            <div class="img-card">
-              <h3 class="img-card-heading">make it fisheye</h3>
-            </div>
+          <li class="project__item">
+
+            <h3 class="project__title">Make it fisheye</h3>
           </li>
 
         </ul>
@@ -138,50 +134,71 @@
   <!-- SITE-FOOTER  -->
   <footer class="site-footer">
     <div class="container">
-      <div class="site-footer-wrapper">
-        <div class="part-one">
+      <div class="site-footer__container">
+        <div class="site-footer__top">
 
           <!-- SITE-LOGO  -->
-          <a class="site-logo-link" href="index.html" tabindex="-1"><img class="site-logo-footer" src="img/loopstudios.svg" width="144" height="24" alt="site-logo"></a>
+          <a class="logo site-footer__logo" href="index.html" tabindex="-1">
+            <img class="logo__img" src="img/loopstudios.svg" width="192" height="32" alt="site-logo">
+          </a>
 
           <!-- SOCIAL-MEDIA-LOGO-LINK  -->
-          <ul class="social-media-list">
+          <ul class="social">
 
             <!-- FACEBOOK  -->
-            <li class="social-media-item">
-              <a class="social-logo-link" href="#"><img class="social-logo" src="img/social-logos/facebook.svg" width="24" height="24" alt=""></a>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__logo" src="img/social-logos/facebook.svg" width="24" height="24" alt="Facebook">
+              </a>
             </li>
 
             <!-- TWITTER  -->
-            <li class="social-media-item">
-              <a class="social-logo-link" href="#"><img class="social-logo" src="img/social-logos/twitter.svg" width="24" height="24" alt=""></a>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__logo" src="img/social-logos/twitter.svg" width="24" height="24" alt="Twitter">
+              </a>
             </li>
 
             <!-- PINTEREST  -->
-            <li class="social-media-item">
-              <a class="social-logo-link" href="#"><img class="social-logo" src="img/social-logos/pinterest.svg" width="24" height="24" alt=""></a>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__logo" src="img/social-logos/pinterest.svg" width="24" height="24" alt="Pinterest">
+              </a>
             </li>
 
             <!-- INSTAGRAM  -->
-            <li class="social-media-item">
-              <a class="social-logo-link" href="#"><img class="social-logo" src="img/social-logos/instagram.svg" width="24" height="24" alt=""></a>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__logo" src="img/social-logos/instagram.svg" width="24" height="24" alt="Instagram">
+              </a>
             </li>
           </ul>
         </div>
 
-        <div class="part-two">
-          <div class="site-nav-footer">
-            <ul class="header-link-list">
-              <li class="site-lisnk-list-item"><a class="header-links" href="#" target="_blank">About</a></li>
-              <li class="site-lisnk-list-item"><a class="header-links" href="#" target="_blank">Careers</a></li>
-              <li class="site-lisnk-list-item"><a class="header-links" href="#" target="_blank">Events</a></li>
-              <li class="site-lisnk-list-item"><a class="header-links" href="#" target="_blank">Products</a></li>
-              <li class="site-lisnk-list-item"><a class="header-links" href="#" target="_blank">Support</a></li>
+        <div class="site-footer__bottom">
+          <!-- SITE-NAV  -->
+          <div class="sitenav site-footer__sitenav">
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">About</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Careers</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Events</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Products</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Support</a>
+              </li>
             </ul>
           </div>
 
           <!-- SITE-MAIN-INFO  -->
-          <span class="site-main-information">© 2021 Loopstudios. All rights reserved.</span>
+          <div class="site-main-information">&copy; 2021 Loopstudios. All rights reserved.</div>
 
         </div>
       </div>

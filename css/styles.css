@@ -289,40 +289,6 @@ img {
   gap: 30px;
 }
 
-.img-card-wrapper {
-  background-image: url(../img/hero-img/deep-earth.jpg);
-  color: var(--text-color);
-}
-
-.img-card-wrapper:nth-child(2) {
-  background-image: url(../img/hero-img/night-arcade.jpg);
-}
-
-.img-card-wrapper:nth-child(3) {
-  background-image: url(../img/hero-img/soccer-team-vr.jpg);
-}
-
-
-.img-card-wrapper:nth-child(4) {
-  background-image: url(../img/hero-img/the-grid.jpg);
-}
-
-.img-card-wrapper:nth-child(5) {
-  background-image: url(../img/hero-img/from-up-above-vr.jpg);
-}
-
-.img-card-wrapper:nth-child(6) {
-  background-image: url(../img/hero-img/pocket-boreals.jpg);
-}
-
-.img-card-wrapper:nth-child(7) {
-  background-image: url(../img/hero-img/the-curiosity.jpg);
-}
-
-.img-card-wrapper:nth-child(8) {
-  background-image: url(../img/hero-img/make-it-fisheye.jpg);
-}
-
 .img-card {
   display: flex;
   align-items: flex-end;
@@ -420,57 +386,4 @@ img {
   --special-text-color: #555;
   color: var(--special-text-color);
   white-space: nowrap;
-}
-
-
-/* RETINA-BG  */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
-  .first-wrapper {
-    background-image: url(../img/main-bg@2x.jpg);
-  }
-
-  .hero-one {
-    background-image: url(../img/hero-bg-img@2x.jpg);
-  }
-
-  .img-card-wrapper {
-    background-image: url(../img/hero-img/deep-earth@2x.jpg);
-  }
-
-  .img-card-wrapper:nth-child(2) {
-    background-image: url(../img/hero-img/night-arcade@2x.jpg);
-  }
-
-  .img-card-wrapper:nth-child(3) {
-    background-image: url(../img/hero-img/soccer-team-vr@2x.jpg);
-  }
-
-
-  .img-card-wrapper:nth-child(4) {
-    background-image: url(../img/hero-img/the-grid@2x.jpg);
-  }
-
-  .img-card-wrapper:nth-child(5) {
-    background-image: url(../img/hero-img/from-up-above-vr@2x.jpg);
-  }
-
-  .img-card-wrapper:nth-child(6) {
-    background-image: url(../img/hero-img/pocket-boreals@2x.jpg);
-  }
-
-  .img-card-wrapper:nth-child(7) {
-    background-image: url(../img/hero-img/the-curiosity@2x.jpg);
-  }
-
-  .img-card-wrapper:nth-child(8) {
-    background-image: url(../img/hero-img/make-it-fisheye@2x.jpg);
-  }
-
 }
