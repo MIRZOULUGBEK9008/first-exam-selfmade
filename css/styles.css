@@ -28,6 +28,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -44,8 +45,8 @@ body {
   background-color: var(--text-color);
   color: var(--special-text-color);
   font-family: var(--text-font);
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 1.5rem;
+  line-height: 1.6;
   padding: 0;
   margin: 0;
 }
@@ -56,17 +57,17 @@ img {
 }
 
 *:focus {
-  outline: 2px dashed var(--text-color);
-  outline-offset: 3px ;
+  outline: 0.2rem dashed var(--text-color);
+  outline-offset: 0.3rem;
 }
 
 
 /* CONTAINER  */
 .container {
-  max-width: 1214px;
+  max-width: 115rem;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,25 +87,28 @@ img {
 }
 
 .logo__img {
-  width: 192px;
-  height: 32px;
+  display: block;
+  width: 19.2rem;
+  height: 3.2rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 
 /* BUTTON  */
 .button {
   display: inline-block;
-  min-width: 157px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  min-width: 15.7rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   text-align: center;
-  border: 1px solid var(--special-text-color);
+  border: 0.1rem solid var(--special-text-color);
   text-decoration: none;
   text-transform: uppercase;
   color: var(--special-text-color);
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 5px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.5rem;
   white-space: nowrap;
   transition: all 0.4s ease;
 }
@@ -136,7 +140,7 @@ img {
 }
 
 .sitenav__item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 3.2rem;
 }
 
 .sitenav__link {
@@ -156,8 +160,8 @@ img {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
-  bottom: -8px;
+  height: 0.2rem;
+  bottom: -0.8rem;
   left: 0;
   background-color: var(--text-color);
   transform-origin: bottom center;
@@ -179,13 +183,13 @@ img {
 }
 
 .social__item:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 1.6rem;
 }
 
 .social__logo {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   object-fit: contain;
 }
 
@@ -199,8 +203,8 @@ img {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
-  bottom: -8px;
+  height: 0.2rem;
+  bottom: -0.8px;
   left: 0;
   background-color: var(--text-color);
   transform-origin: bottom center;
@@ -221,9 +225,9 @@ img {
 
 /* SITE-HEADER  */
 .site-header-hero-wrapper {
-  padding-top: 34px;
-  padding-bottom: 146px;
-  margin-bottom: 68px;
+  padding-top: 3.4rem;
+  padding-bottom: 14.6rem;
+  margin-bottom: 6.8rem;
   background-image: url(../img/main-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -233,18 +237,18 @@ img {
 }
 
 .site-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .site-header__container {
   display: flex;
   align-items: center;
-  padding-bottom: 94px;
+  padding-bottom: 9.4rem;
 }
 
 .site-header__sitenav {
-  margin-left: 30px;
+  margin-left: 3rem;
 }
 
 .site-header__logo {
@@ -255,13 +259,13 @@ img {
 .site-header-hero-wrapper__title {
   width: 650px;
   margin: 0;
-  padding: 38px;
-  border: 2px solid var(--text-color);
+  padding: 3.8rem;
+  border: 0.2rem solid var(--text-color);
   color: var(--text-color);
   text-transform: uppercase;
   font-family: var(--heading-font);
-  font-size: 72px;
-  line-height: 70px;
+  font-size: 7.2rem;
+  line-height: 1;
   font-weight: 300;
 }
 
@@ -269,8 +273,8 @@ img {
 /* MAIN-CONTENT  */
 /* HERO */
 .hero {
-  padding-top: 92px;
-  padding-bottom: 92px;
+  padding-top: 9.2rem;
+  padding-bottom: 9.2rem;
 }
 
 .hero__inner {
@@ -280,20 +284,20 @@ img {
 
 .hero__content {
   width: 100%;
-  max-width: 542px;
-  padding-top: 96px;
-  padding-left: 96px;
+  max-width: 54.2rem;
+  padding-top: 9.6rem;
+  padding-left: 9.6rem;
   background-color: var(--text-color);
-  margin-left: -162px;
+  margin-left: -16.2rem;
 }
 
 .hero__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
   text-transform: uppercase;
   font-family: var(--heading-font);
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
   font-weight: 300;
 }
 
@@ -305,29 +309,29 @@ img {
 
 /* PROJECTS */
 .projects {
-  padding-top: 92px;
-  padding-bottom: 184px;
+  padding-top: 9.2rem;
+  padding-bottom: 18.4rem;
 }
 
 .projects__container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 80px;
+  padding-bottom: 8rem;
 }
 
 .projects__title-button-wrapper {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
   display: flex;
   align-items: center;
 }
 
 .projects__title {
   margin: 0;
-  padding-right: 30px;
+  padding-right: 3rem;
   text-transform: uppercase;
   font-family: var(--heading-font);
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
   font-weight: 300;
   white-space: nowrap;
 }
@@ -338,21 +342,21 @@ img {
   margin: 0;
   list-style: none;
   display: flex;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  margin-left: -3rem;
+  margin-bottom: -3rem;
   flex-wrap: wrap;
 }
 
 .project__item {
   display: flex;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
 }
 
 .project__img {
   display: block;
-  min-width: 256px;
-  height: 450px;
+  min-width: 25.6rem;
+  height: 45rem;
   object-fit: contain;
 }
 
@@ -362,14 +366,14 @@ img {
   left: 0;
   bottom: 0;
   margin: 0;
-  padding: 32px 40px;
+  padding: 3.2rem 4rem;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
   font-family: var(--heading-font);
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 300;
-  line-height: 32px;
+  line-height: 1;
 }
 
 .project__link {
@@ -403,13 +407,13 @@ img {
   background-color: var(--special-text-color);
 }
 .site-footer__container {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
 }
 
 .site-footer__top {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .site-footer__logo {
@@ -417,12 +421,12 @@ img {
 }
 
 .logo__img--footer {
-  width: 144px;
-  height: 24px;
+  width: 14.4rem;
+  height: 2.4rem;
 }
 
 .site-footer__social {
-  padding-left: 30px;
+  padding-left: 3rem;
 }
 
 .site-footer__bottom {
@@ -432,7 +436,7 @@ img {
 
 .site-footer__sitenav {
   margin-right: auto;
-  padding-right: 30px;
+  padding-right: 3rem;
 }
 
 .site-main-information {
